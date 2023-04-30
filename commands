@@ -1,0 +1,141 @@
+ 1  #!/bin/bash
+    2  # Licensed to the Apache Software Foundation (ASF) under one or more
+    3  # contributor license agreements.  See the NOTICE file distributed with
+    4  # this work for additional information regarding copyright ownership.
+    5  # The ASF licenses this file to You under the Apache License, Version 2.0
+    6  # (the "License"); you may not use this file except in compliance with
+    7  # the License.  You may obtain a copy of the License at
+    8  #
+    9  #    http://www.apache.org/licenses/LICENSE-2.0
+   10  #
+   11  # Unless required by applicable law or agreed to in writing, software
+   12  # distributed under the License is distributed on an "AS IS" BASIS,
+   13  # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   14  # See the License for the specific language governing permissions and
+   15  # limitations under the License.
+   16  if [ $# -lt 1 ]; then    echo "USAGE: $0 [-daemon] server.properties [--override property=value]*";      exit 1; fi
+   17  base_dir=$(dirname $0)
+   18  if [ "x$KAFKA_LOG4J_OPTS" = "x" ]; then     export KAFKA_LOG4J_OPTS="-Dlog4j.configuration=file:$base_dir/../config/log4j.properties"; fi
+   19  if [ "x$KAFKA_HEAP_OPTS" = "x" ]; then     export KAFKA_HEAP_OPTS="-Xmx1G -Xms1G"; fi
+   20  EXTRA_ARGS=${EXTRA_ARGS-'-name kafkaServer -loggc'}
+   21  COMMAND=$1
+   22  case $COMMAND in   -daemon)     EXTRA_ARGS="-daemon "$EXTRA_ARGS;     shift;     ;;   *)     ;; esac
+   23  exec $base_dir/kafka-run-class.sh $EXTRA_ARGS kafka.Kafka "$@"
+   24  #!/bin/bash
+   25  # Licensed to the Apache Software Foundation (ASF) under one or more
+   26  # contributor license agreements.  See the NOTICE file distributed with
+   27  # this work for additional information regarding copyright ownership.
+   28  # The ASF licenses this file to You under the Apache License, Version 2.0
+   29  # (the "License"); you may not use this file except in compliance with
+   30  # the License.  You may obtain a copy of the License at
+   31  #
+   32  #    http://www.apache.org/licenses/LICENSE-2.0
+   33  #
+   34  # Unless required by applicable law or agreed to in writing, software
+   35  # distributed under the License is distributed on an "AS IS" BASIS,
+   36  # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   37  # See the License for the specific language governing permissions and
+   38  # limitations under the License.
+   39  if [ $# -lt 1 ]; then    echo "USAGE: $0 [-daemon] zookeeper.properties";        exit 1; fi
+   40  base_dir=$(dirname $0)
+   41  if [ "x$KAFKA_LOG4J_OPTS" = "x" ]; then     export KAFKA_LOG4J_OPTS="-Dlog4j.configuration=file:$base_dir/../config/log4j.properties"; fi
+   42  if [ "x$KAFKA_HEAP_OPTS" = "x" ]; then     export KAFKA_HEAP_OPTS="-Xmx512M -Xms512M"; fi
+   43  EXTRA_ARGS=${EXTRA_ARGS-'-name zookeeper -loggc'}
+   44  COMMAND=$1
+   45  case $COMMAND in   -daemon)      EXTRA_ARGS="-daemon "$EXTRA_ARGS;      shift;      ;;  *)      ;; esac
+   46  exec $base_dir/kafka-run-class.sh $EXTRA_ARGS org.apache.zookeeper.server.quorum.QuorumPeerMain "$@"
+   47  which git
+   48  pwd
+   49  mkdir qf-pets-sansushmkdir qf-pets-sansush
+   50  cd qf-pets-sansush
+   51  cd qf-pets-sansush/
+   52  ls -lrt
+   53   mkdir Devops
+   54  pwd
+   55  cd Devops
+   56  pwd
+   57  clear
+   58  ls -lrt
+   59  mkdir terraform
+   60  mkdir pipelines
+   61  mkdir ansible
+   62  ls -lrt
+   63  touch terraform/main.tf
+   64  touch ansible/site.yml
+   65  touch pipelines/jenkinsfile
+   66  ls -lrt
+   67  pwd
+   68  git status
+   69   git
+   70  pwd
+   71  tree ..Devops
+   72  tree ../Devops
+   73  pwd
+   74  tree ../Devops
+   75  ls -lrt
+   76  tree ../Devops
+   77  tree ../devops
+   78  ls -lrt
+   79  git init
+   80  git status
+   81  cd qf-pets-sansush/Devops
+   82  pwd
+   83  ls -lrt
+   84  git init
+   85  which git
+   86  git status
+   87  git add ansible/
+   88  git status
+   89  git add.
+   90  git add .
+   91  git status
+   92  git commit -m "added devops files"
+   93  git status
+   94  git log
+   95  ls -lrt
+   96  touch ansible/nginx.yml
+   97  git status
+   98  git add ,
+   99  git status
+  100  git add .
+  101  git status
+  102  git commit -m "updated ngix file"
+  103  git log
+  104  git commit --amend
+  105  git log
+  106  git remote add origin git@github.com:qf-pets-sansush/Devops.git
+  107  git push origin main
+  108  git branch
+  109  git remote -v
+  110  git branch
+  111  git push origin master
+  112  git push origin main
+  113  ssh-keygen
+  114  cat /c/Users/SUSHMA SWARAJ/.ssh/id_rsa.pub
+  115  cat c/Users/SUSHMA SWARAJ/.ssh/id_rsa.pub
+  116  cat Users/SUSHMA SWARAJ/.ssh/id_rsa.pub
+  117  cat /c/Users/SUSHMA SWARAJ/.ssh/id_rsa.pub
+  118  cat /c/Users/SUSHMA_SWARAJ/.ssh/id_rsa.pub
+  119  cat /c/Users/SUSHMASWARAJ/.ssh/id_rsa.pub
+  120  ssh-keygen
+  121  ssh-keygen
+  122  ssh-keygen
+  123  ssh-keygen
+  124  ssh-keygen
+  125  ssh-keygen
+  126  cat /c/Users/SUSHMA SWARAJ/.ssh/id_rsa.pub
+  127  git branch -M main
+  128  pwd
+  129  git add .
+  130  git status
+  131  git log
+  132  git remote add origin git@github.com:qf-pets-sansush/Devops.git
+  133  git remote -v
+  134  git branch
+  135  git push origin
+  136  ssh-keygen
+  137  cat /c/Users/SUSHMA SWARAJ/.ssh/id_rsa.pub
+  138  git push origin main
+  139  ssh-keygen
+  140  cat /c/Users/SUSHMA SWARAJ/.ssh/id_rsa.pub
+  141  history
